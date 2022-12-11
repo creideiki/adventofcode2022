@@ -43,7 +43,7 @@ lines.each do |line|
   end
 end
 
-lcm = monkeys.map(&:divisor).reduce(:*)
+lcm = monkeys.map(&:divisor).reduce(:lcm)
 
 10_000.times do |round|
   monkeys.each do |m|
