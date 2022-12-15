@@ -59,8 +59,6 @@ class Map
         sy = sensors[index][1]
         bx = beacons[index][0]
         by = beacons[index][1]
-        @map[sx] = 1 if sy == @row
-        @map[bx] = 2 if by == @row
 
         manhattan_distance = (sx - bx).abs + (sy - by).abs
         next unless (sy - row).abs < manhattan_distance
